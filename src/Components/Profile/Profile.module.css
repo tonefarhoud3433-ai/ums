@@ -1,0 +1,13 @@
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.input {
+  padding: 10px;
+  pointer-events: none;
+  background-color: #f8f9fa;
+}
+.input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+}

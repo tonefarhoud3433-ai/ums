@@ -1,0 +1,14 @@
+.homeSection {
+  background: #f8f8f8;
+  min-height: calc(100vh - 62px);
+}
+.homeIcons {
+  color: #feaf00;
+}
+.cardAnimation {
+  transition: 0.3s ease;
+}
+.cardAnimation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}

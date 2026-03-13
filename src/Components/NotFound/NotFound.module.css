@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.content {
+  background: white;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 6rem;
+  color: #ffc107;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.btn {
+  background-color: #ffc107;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0a800;
+}
