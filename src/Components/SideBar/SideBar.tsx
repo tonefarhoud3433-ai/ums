@@ -42,7 +42,7 @@
   }
 
     return (
-      <div className='sidebarContainer vh-100 position-relative'>
+      <div className='sidebarContainer'>
         <Sidebar collapsed={collapse} className='vh-100'>
           <div>
           {collapse ? <div className='text-center my-3 text-warning'><GrSystem size={25} /></div> : <h3 className={styles.header}>UMS</h3>}
