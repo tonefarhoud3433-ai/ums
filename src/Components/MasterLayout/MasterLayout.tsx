@@ -10,7 +10,7 @@ export default function MasterLayout() {
           <div className={styles.sidebar}>
             <SideBar/>
           </div>
-          <div className="w-100">
+          <div className={styles.content}>
             <NavBar/>
             <Outlet/>
           </div>

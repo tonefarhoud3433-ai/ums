@@ -80,8 +80,8 @@ export default function UsersList() {
           <button onClick={moveToAddUser} className='btn btn-warning text-white'>Add New User</button>
         </div>
           <hr />
-        <div>
-          <Table hover style={{ borderCollapse: "separate", borderSpacing: "0 15px" }}>
+        <div className='table-responsive'>
+          <Table  hover style={{ borderCollapse: "separate", borderSpacing: "0 15px" }}>
             <thead>
               <tr>
                 <th></th>

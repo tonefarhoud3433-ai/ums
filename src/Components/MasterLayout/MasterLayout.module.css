@@ -4,3 +4,13 @@
   top: 0;
   bottom: 0;
 }
+.content {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    max-width: 600px;
+  }
+}

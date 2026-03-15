@@ -91,7 +91,7 @@ export default function Home() {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <div>
+          <div className="table-responsive">
             <Table hover style={{ borderCollapse: "separate", borderSpacing: "0 15px" }}>
               <thead>
                 <tr>
