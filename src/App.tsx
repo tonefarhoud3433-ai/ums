@@ -1,15 +1,15 @@
-
+import { lazy , Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import AuthLayout from './Components/AuthLayout/AuthLayout'
-import NotFound from './Components/NotFound/NotFound'
-import Login from './Components/Login/Login'
 import MasterLayout from './Components/MasterLayout/MasterLayout'
-import Home from './Components/Home/Home'
-import UsersList from './Components/UsersList/UsersList'
-import AddUser from './Components/AddUser/AddUser'
-import Profile from './Components/Profile/Profile'
 import { ToastContainer} from 'react-toastify';
+const Login = lazy(() => import('./Components/Login/Login'))
+const NotFound = lazy(() => import('./Components/NotFound/NotFound'))
+const Home = lazy(() => import('./Components/Home/Home'))
+const UsersList = lazy(() => import('./Components/UsersList/UsersList'))
+const AddUser = lazy(() => import('./Components/AddUser/AddUser'))
+const Profile = lazy(() => import('./Components/Profile/Profile'))
 
 
 function App() {
@@ -42,7 +42,9 @@ function App() {
   return (
     <>
     <ToastContainer/>
-      <RouterProvider router={routes}></RouterProvider>
+      <Suspense fallback={<h2 className="text-center mt-5">Loading...</h2>}>
+        <RouterProvider router={routes}/>
+      </Suspense>
     </>
   )
 }
