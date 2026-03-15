@@ -58,6 +58,10 @@ body {
 /* SideBar */
 .sidebarContainer {
   background-color: bisque;
+  position: sticky;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
 }
 .sidebarContainer .ps-sidebar-container .ps-menu-button {
   margin: 1rem 3rem;

@@ -1,6 +1,6 @@
 .sidebar {
   position: sticky;
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
   bottom: 0;
 }
